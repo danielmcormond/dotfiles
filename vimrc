@@ -52,8 +52,3 @@ autocmd FileType php autocmd BufWritePre <buffer> :call setline(1,map(getline(1,
 :autocmd BufWritePre *.php setlocal binary
 :autocmd BufWritePre *.php setlocal noeol
 :autocmd BufWritePost *.php setlocal nobinary
-
-"-- NERDTree options
-let NERDTreeShowHidden = 1
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
